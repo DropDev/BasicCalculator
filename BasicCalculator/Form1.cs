@@ -27,7 +27,7 @@ namespace BasicCalculator
         private void button1_Click(object sender, EventArgs e)
         {
             this.textBox1.Text = "";
-            inputt += "1";
+            input += "1";
             this.textBox1.Text += input;
         }
 
