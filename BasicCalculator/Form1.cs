@@ -149,7 +149,7 @@ namespace BasicCalculator
                 result = num1 * num2;
                 textBox1.Text = result.ToString();
             }
-            else if (operation == '//')
+            else if (operation == '/')
             {
                 if (num2 != 0)
                 {
