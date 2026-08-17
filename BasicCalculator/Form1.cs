@@ -19,7 +19,7 @@ namespace BasicCalculator
         double result = 0.0;                //Get result
 
 
-        public Form12()
+        public Form1()
         {
             InitializeComponent();
         }
