@@ -12,11 +12,11 @@ namespace BasicCalculator
 {
     public partial class Form1 : Form
     {
-        string input = string.Empty;        //String storing user input
-        String operand1 = string.Empty;     //String storing first operand
-        String operand2 = string.Empty;     //String storing second operand
-        char operation;                     //Char to store operator
-        double result = 0.0;                //Get result
+        public string input = string.Empty;        //String storing user input
+        public String operand1 = string.Empty;     //String storing first operand
+        public String operand2 = string.Empty;     //String storing second operand
+        public char operation;                     //Char to store operator
+        public double result = 0.0;                //Get result
 
 
         public Form1()
@@ -127,7 +127,7 @@ namespace BasicCalculator
             input = string.Empty;
         }
 
-        private void button16_Click(object sender, EventArgs e)
+        public void button16_Click(object sender, EventArgs e)
         {
             operand2 = input;
             double num1, num2;
@@ -139,7 +139,7 @@ namespace BasicCalculator
                 result = num1 + num2;
                 textBox1.Text = result.ToString();
             }
-            else if (operation == '+')
+            else if (operation == '+')//this should be minus
             {
                 result = num1 - num2;
                 textBox1.Text = result.ToString();
@@ -161,11 +161,6 @@ namespace BasicCalculator
                     textBox1.Text = "ERROR DIV BY ZERO"; 
                 }
             }
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void button17_Click(object sender, EventArgs e)
