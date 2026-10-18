@@ -94,9 +94,20 @@ namespace BasicCalculator
             this.textBox1.Text += input;
         }
 
-        private void button11_Click(object sender, EventArgs e)
+        public void button11_Click(object sender, EventArgs e)
         {
+
             input += ".";
+
+
+            //THEFIX:
+            //if (!input.Contains("."))
+            //{
+            //    input += ".";
+            //    textBox1.Text = input;
+            //}
+
+
         }
 
         private void button12_Click(object sender, EventArgs e)
@@ -163,7 +174,7 @@ namespace BasicCalculator
             }
         }
 
-        private void button17_Click(object sender, EventArgs e)
+        public void button17_Click(object sender, EventArgs e)
         {
             this.textBox1.Text = "";
             this.input = string.Empty;
