@@ -143,7 +143,7 @@ namespace BasicCalculator
                 result = num1 + num2;
                 textBox1.Text = result.ToString();
             }
-            else if (operation == '+')//this should be minus
+            else if (operation == '-')
             {
                 result = num1 - num2;
                 textBox1.Text = result.ToString();
