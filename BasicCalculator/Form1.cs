@@ -96,18 +96,11 @@ namespace BasicCalculator
 
         public void button11_Click(object sender, EventArgs e)
         {
-
-            input += ".";
-
-
-            //THEFIX:
-            //if (!input.Contains("."))
-            //{
-            //    input += ".";
-            //    textBox1.Text = input;
-            //}
-
-
+            if (!input.Contains("."))
+            {
+                input += ".";
+                textBox1.Text = input;
+            }
         }
 
         private void button12_Click(object sender, EventArgs e)
